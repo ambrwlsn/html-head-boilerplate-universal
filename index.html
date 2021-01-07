@@ -3,13 +3,15 @@
 <html lang="">
     <head>
         <!-- ESSENTIALS * start * -->
+        <!-- <meta charset="utf-8"> is designed to be in 
+             an HTTP header but is useful to add as a fallback
+             in case your server does not send this header or 
+             in case a user copies your HTML page to use elsewhere.
+        -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ExampleTitle</title>
         <meta name="description" content="example-content">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
         <!-- ESSENTIALS * end * -->
 
         <!-- SEO * start * -->
@@ -55,6 +57,16 @@
         <!-- STYLES * start * -->
         <link rel="stylesheet" href="">
         <!-- STYLES * end * -->
+
+        <!-- LEGACY * start * -->
+        <!-- Fun fact: this meta tag was used back in the IE8 era
+             to ensure IE8 features were used if a user had IE8
+             installed. If this tag was not present on a site, a 
+             user with IE8 would still only have access to IE7 
+             features for that particular site .
+        -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- LEGACY * end * -->
     </head>
     </head>
     <body>
